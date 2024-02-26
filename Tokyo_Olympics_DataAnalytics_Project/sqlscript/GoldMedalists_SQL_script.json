@@ -1,0 +1,17 @@
+{
+	"name": "GoldMedalists_SQL_script",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [Team_Country]\n,[Gold]\n,[Total]\n FROM [Database1].[dbo].[GoldMedalistsCount]\n\n\n select count(*) from GoldMedalistsCount\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "Database1",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

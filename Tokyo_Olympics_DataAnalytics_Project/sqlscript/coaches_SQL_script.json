@@ -1,0 +1,17 @@
+{
+	"name": "coaches_SQL_script",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [PersonName]\n,[Country]\n,[Discipline]\n,[Event]\n FROM [Database1].[dbo].[coaches]\n where event is not null\n\n\n\nselect Country, count(PersonName) as TotalMembers,\nROW_NUMBER() over(order by (select 0)) as rn from coaches\n group by country\n order by rn desc",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "Database1",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

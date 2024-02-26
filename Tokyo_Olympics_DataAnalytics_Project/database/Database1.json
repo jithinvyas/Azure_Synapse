@@ -1,0 +1,25 @@
+{
+	"name": "Database1",
+	"properties": {
+		"Name": "Database1",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://tokyo-olympic-data@jvstoragepoint.dfs.core.windows.net/transform-data/coaches",
+			"Properties": {
+				"FormatType": "csv",
+				"LinkedServiceName": "jv-synapse-studio-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 6,
+		"ObjectId": "d26963f9-d40a-4f47-adef-cc25f643bdf8"
+	},
+	"type": "DATABASE"
+}
