@@ -1,0 +1,16 @@
+{
+	"name": "LS_Sql",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "integrated security=False;data source=D101466\\SQL_SERVER;initial catalog=IncrementalDB;user id=sa",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1NGRjMjgyYi02N2I1LTQ2NTMtODYzNC03NDc0ZDEwOTBkYWUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "Selfhost-IR",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
